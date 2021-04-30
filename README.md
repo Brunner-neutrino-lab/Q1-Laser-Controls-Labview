@@ -2,7 +2,7 @@
 
 This repository contains the Labview API for controlling the Q1 Laser. The main goal is to wrap the basic commands as vi's so they can be easily integrated into Labview programs that use the Q1 laser.
 
-## Structure of commands
+# Structure of commands
 
 The Q1 laser is controlled over the LAN via HTTP protocols. Section 11 "Programming" of the user manual (ppg. 45 - 51) contains the instructions on how to program the laser. The user manual is on the BvL Wiki on the [Q1 Laser page](https://tapajo.physics.mcgill.ca/neutrino/wiki/bnl/index.php/Q1_Laser) along with all the notes and documentation.
 
@@ -14,24 +14,24 @@ For ease of Labview implementation, this API will generally use the concatenate 
 
 To check if your command was issued properly, you can use the [Web Control Panel](http://172.16.0.47:7557/) to see what the laser's current status and settings are! 
 
-## Functions
+# Functions
 
-### Send Command Example
+## Send Command Example
 This is a simple example vi to show how commands are issued. It is for demonstration and troubleshooting only, **do not** embed this in other vi's!
 
-#### Inputs:  
+### Inputs:  
 **JSON Command:** The command to be issued as a "normal" string. Thyese can by copy/pasted from the manual.
 
-#### Outputs:  
+### Outputs:  
 **Headers:** Header of HTTP response from laser  
 **Body:** Body of the HTTP response from the laser. Usually `{"message":"success"}` or `{"message":"failed"}`  
 
-### Check Current Status
+## Check Current Status
 This is a simple example vi to show how commands are issued. It is for demonstration and troubleshooting only, **do not** embed this in other vi's!
 
-#### Inputs:  
+### Inputs:  
 **None**
 
-#### Outputs:  
+### Outputs:  
 **Headers:** Header of HTTP response from laser  
 **Body:** Body of the HTTP response from the laser giving the current values for all the settings in JSON format.
