@@ -27,7 +27,7 @@ This is a simple example vi to show how commands are issued. It is for demonstra
 **Body:** Body of the HTTP response from the laser. Usually `{"message":"success"}` or `{"message":"failed"}`  
 
 ## Check Current Status
-This is a simple example vi to show how commands are issued. It is for demonstration and troubleshooting only, **do not** embed this in other vi's!
+This is a vi to show the current settings of the laser as an un-parsed JSON string.
 
 ### Inputs:  
 **None**
