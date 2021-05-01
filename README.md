@@ -35,3 +35,19 @@ This is a vi to show the current settings of the laser as an un-parsed JSON stri
 ### Outputs:  
 **Headers:** Header of HTTP response from laser  
 **Body:** Body of the HTTP response from the laser giving the current values for all the settings in JSON format.
+
+## Laser Status
+This is a vi to show a few parameters of the laser's current status
+
+### Inputs:  
+**None**
+
+### Outputs:  
+**LaserOn?:** True if laser is running, False if laser is stopped  
+**HU-Temp-ready:** True if harmonic unit temperature is ready for operation  
+**laser-error-code:** error code from laser head
+**hu-error-code:** error code from harmonic unit  
+**rep-rate:** current repetition rate of the laser in Hz  
+**h1-transmission:** current transmission setting for the attenuator in %  
+**LD1-set-current:** Laser diode set current in A  
+**h1-zero-transmission-offset:** Attenuator offset for minimum transmission
