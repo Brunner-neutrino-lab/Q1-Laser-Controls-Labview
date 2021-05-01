@@ -45,7 +45,7 @@ This is a vi to show a few parameters of the laser's current status
 ### Outputs:  
 **LaserOn?:** True if laser is running, False if laser is stopped  
 **HU-Temp-ready:** True if harmonic unit temperature is ready for operation  
-**laser-error-code:** error code from laser head
+**laser-error-code:** error code from laser head  
 **hu-error-code:** error code from harmonic unit  
 **rep-rate:** current repetition rate of the laser in Hz  
 **h1-transmission:** current transmission setting for the attenuator in %  
