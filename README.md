@@ -17,7 +17,7 @@ To check if your command was issued properly, you can use the [Web Control Panel
 # Functions
 
 ## Send Command Example
-This is a simple example vi to show how commands are issued. It is for demonstration and troubleshooting only, **do not** embed this in other vi's!
+This is a simple example vi to show how commands are issued. It is for demonstration and troubleshooting only, **do not embed this in other vi's!**  
 
 ### Inputs:  
 **JSON Command:** The command to be issued as a "normal" string. Thyese can by copy/pasted from the manual.
