@@ -11,6 +11,8 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="CheckCurrentStatus.vi" Type="VI" URL="../CheckCurrentStatus.vi"/>
+		<Item Name="LaserInitialize.vi" Type="VI" URL="../LaserInitialize.vi"/>
+		<Item Name="LaserOnOff.vi" Type="VI" URL="../LaserOnOff.vi"/>
 		<Item Name="LaserStatus.vi" Type="VI" URL="../LaserStatus.vi"/>
 		<Item Name="SendCommandExample.vi" Type="VI" URL="../SendCommandExample.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
