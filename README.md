@@ -26,6 +26,15 @@ This is a simple example vi to show how commands are issued. It is for demonstra
 **Headers:** Header of HTTP response from laser  
 **Body:** Body of the HTTP response from the laser. Usually `{"message":"success"}` or `{"message":"failed"}`  
 
+## Laser Initialize
+This vi initializes the HTTP handle with credentials for the Q1 laser
+
+### Inputs:  
+**None**
+
+### Outputs:  
+**client handle out:** HTTP handle with credentials for Q1 laser communication 
+
 ## Check Current Status
 This is a vi to show the current settings of the laser as an un-parsed JSON string.
 
@@ -40,9 +49,10 @@ This is a vi to show the current settings of the laser as an un-parsed JSON stri
 This is a vi to show a few parameters of the laser's current status
 
 ### Inputs:  
-**None**
+**client handle in:** HTTP handle with credentials for Q1 laser communication
 
 ### Outputs:  
+**client handle out:** HTTP handle with credentials for Q1 laser communication  
 **LaserOn?:** True if laser is running, False if laser is stopped  
 **HU-Temp-ready:** True if harmonic unit temperature is ready for operation  
 **laser-error-code:** error code from laser head  
@@ -50,4 +60,16 @@ This is a vi to show a few parameters of the laser's current status
 **rep-rate:** current repetition rate of the laser in Hz  
 **h1-transmission:** current transmission setting for the attenuator in %  
 **LD1-set-current:** Laser diode set current in A  
-**h1-zero-transmission-offset:** Attenuator offset for minimum transmission
+**h1-zero-transmission-offset:** Attenuator offset for minimum transmission  
+
+## Laser On/Off
+This is a vi to turn on and off the laser
+
+### Inputs:  
+**client handle in:** HTTP handle with credentials for Q1 laser communication  
+**Laser on/off:** Boolean [True: Laser on , False: Laser off]
+
+### Outputs:  
+**client handle out:** HTTP handle with credentials for Q1 laser communication  
+**LaserOn?:** Boolean [True: Laser on , False: Laser off]  
+ 
