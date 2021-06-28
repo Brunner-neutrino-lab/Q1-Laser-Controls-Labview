@@ -10,7 +10,12 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="BatchModeDeactivate.vi" Type="VI" URL="../BatchModeDeactivate.vi"/>
+		<Item Name="BatchModeInitialize.vi" Type="VI" URL="../BatchModeInitialize.vi"/>
+		<Item Name="BatchModeStatus.vi" Type="VI" URL="../BatchModeStatus.vi"/>
+		<Item Name="BatchModeTest.vi" Type="VI" URL="../BatchModeTest.vi"/>
 		<Item Name="CheckCurrentStatus.vi" Type="VI" URL="../CheckCurrentStatus.vi"/>
+		<Item Name="LaserBatchMode.vi" Type="VI" URL="../LaserBatchMode.vi"/>
 		<Item Name="LaserInitialize.vi" Type="VI" URL="../LaserInitialize.vi"/>
 		<Item Name="LaserOnOff.vi" Type="VI" URL="../LaserOnOff.vi"/>
 		<Item Name="LaserStatus.vi" Type="VI" URL="../LaserStatus.vi"/>
